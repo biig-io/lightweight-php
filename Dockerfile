@@ -1,6 +1,6 @@
 FROM alpine:edge
 MAINTAINER Manu <manuel.barraud@biig.fr>
-ENV PHP_VERSION php-7.1.7
+ENV PHP_VERSION php-7.2.0beta1
 RUN     apk add --update curl tar xz libedit libxml2 libjpeg-turbo libwebp cyrus-sasl icu-libs libpng cyrus-sasl libmemcached && \
         apk add --update --virtual build-deps build-base git make autoconf file pkgconf re2c binutils bison  \
         curl-dev libedit-dev libxml2-dev libressl-dev wget ca-certificates libwebp-dev libjpeg-turbo-dev libpng-dev icu-dev libmemcached-dev cyrus-sasl-dev && \
