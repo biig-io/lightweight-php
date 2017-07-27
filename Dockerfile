@@ -18,5 +18,5 @@ RUN     apk add --update curl tar xz libedit libxml2 libjpeg-turbo libwebp cyrus
         pecl install memcached redis && \
         strip --strip-all /usr/bin/php && \
         cd / && rm -r php-src && rm -r /usr/include && rm -r /usr/php && rm -r /usr/lib/php/build && \
-        rm /usr/lib/php/extensions/no-debug-non-zts-20160303/opcache.a && \
+        find /usr/lib/php/extensions/ | grep .a$ | xargs rm && \
         apk del build-deps && rm -rf /var/cache/apk/* && rm -rf /tmp/*
