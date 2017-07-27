@@ -1,5 +1,5 @@
 # lightweight-php
-Lightweight php CLI based on alpine with frequent module used by BiiG
+Lightweight php CLI based on alpine with frequents modules used by BiiG
 
 This image contain only the php CLI interpreter
 
