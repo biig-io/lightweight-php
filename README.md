@@ -19,10 +19,14 @@ $ docker run -it --rm --name my-running-app my-php-app
 
 ## Run a single PHP script
 
-```$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp biig/lightweight-php:latest php your-script.php```
+```
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp biig/lightweight-php:latest php your-script.php
+```
 
 
 ## Attach a volume and spawn a new shell
 
-```$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp biig/lightweight-php:latest sh```
+```
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp biig/lightweight-php:latest sh
+```
 
